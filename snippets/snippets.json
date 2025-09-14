@@ -1,0 +1,49 @@
+{
+    "Class": {
+        "prefix": "Class",
+        "body": [
+            "Class $1",
+            "End Class"
+        ],
+        "description": "New Class snippet"
+    },
+    "Variable": {
+        "prefix": "Dim",
+        "body": [
+            "Dim $1 = $2"
+        ],
+        "description": "New Variable snippet"
+    },
+    "Function": {
+        "prefix": "Func",
+        "body": [
+            "Func $1()",
+            "End Func"
+        ],
+        "description": "New Function snippet"
+    },
+    "If": {
+        "prefix": "If",
+        "body": [
+            "If $1 Then",
+            "End If"
+        ],
+        "description": "New If snippet"
+    },
+    "While": {
+        "prefix": "While",
+        "body": [
+            "While $1",
+            "End While"
+        ],
+        "description": "New While snippet"
+    },
+    "For": {
+        "prefix": "For",
+        "body": [
+            "For $1 In $2",
+            "Next"
+        ],
+        "description": "New While snippet"
+    }
+}

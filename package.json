@@ -1,0 +1,59 @@
+{
+  "name": "ant-script",
+  "displayName": "Ant-Script",
+  "description": "",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "configuration": {
+      "title": "AntScript",
+      "properties": {
+        "AntScript.Path": {
+          "type": "string",
+          "default": "",
+          "description": "Path to the AntScript interpreter . Default is empty, and will be auto-configured on first run."
+        }
+      }
+    },
+    "languages": [
+    {
+        "id": "AntScript",
+        "aliases": [
+          "Ant Script",
+          "Ant",
+          "AntScript"
+        ],
+        "extensions": [
+          ".ant"
+        ],
+        "configuration": "./language-configuration.json"
+    }
+    ],
+    "grammars": [
+      {
+          "language": "AntScript",
+          "scopeName": "source.ant",
+          "path": "./syntaxes/AntScript.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "AntScript",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.3"
+  },
+  "activationEvents": [
+    "onLanguage:AntScript"
+  ],
+  "main": "./extension.js"
+}
+
