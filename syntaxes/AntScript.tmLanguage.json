@@ -46,7 +46,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.AntScript",
-				"match": "(?i)\\b(if|else|while|for|in|return|class|func|let)\\b",
+				"match": "(?i)\\b(if|else|while|for|in|return|class|func|let|self)\\b",
 				"settings": {
 					"foreground": "#CF8049"
 				}
