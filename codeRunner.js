@@ -32,18 +32,8 @@ class CodeRunner {
 
     this.terminal.show(); // 聚焦终端
 
-    // 真正执行命令
     const cmd = `${antPath} --file "${filePath}"`;
     this.terminal.sendText(cmd);
-
-    // 超时保护：30 s 后如果终端还在跑，就发 Ctrl+C 并给用户提示
-    setTimeout(() => {
-      if (this.terminal && !this.terminal.exitStatus) {
-        this.terminal.sendText('\x03'); // Ctrl+C
-        this.outputChannel.appendLine('⏰ Execution timeout (30s) — sent Ctrl+C');
-        this.outputChannel.show(true);
-      }
-    }, 30000);
   }
 
   /** 手动停止（命令面板可绑定） */
